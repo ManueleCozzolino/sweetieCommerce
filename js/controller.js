@@ -6,7 +6,7 @@ app.config(['$routeProvider','$locationProvider',
 			.when('/', {
 				templateUrl: 'pages/home.html'
 			})
-			.when('/catalogo/:source/:objName/:pag', {
+			.when('/catalogo/:objName/:pag', {
 				templateUrl: 'pages/catalogo.html',
 				controller: 'catalogCtrl'
 			})
@@ -23,7 +23,7 @@ app.service('getCatalog', ['$http', function($http){
 	var refService = this;
 	this.list = [];
 	this.askForList = function(info) {
-		$http.get("json/"+info.source)
+		$http.get(info.source)
 			.then(
 				function(resp){
 					refService.list = resp.data[info.objName];
@@ -40,7 +40,7 @@ app.service('getCatalog', ['$http', function($http){
 
 app.controller('catalogCtrl', ['$scope', 'getCatalog', '$routeParams', function($scope, getCatalog, $routeParams) {
 	$scope.infoService = {
-		source : $routeParams.source,
+		source : "json/"+$routeParams.objName+".json",
 		objName : $routeParams.objName
 	};
 	$scope.pagina = $routeParams.pag;
