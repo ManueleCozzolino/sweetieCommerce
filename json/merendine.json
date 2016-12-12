@@ -1,0 +1,59 @@
+{
+	"merendine" : [
+		{ 
+			"nome" : "Tronky",
+			"url" : "img/merendine/tronky.png",
+			"prezzo" : 1
+		},
+		{ 
+			"nome" : "Bounty",
+			"url" : "img/merendine/bounty.png",
+			"prezzo" : 0.8
+		},
+		{ 
+			"nome" : "Bueno",
+			"url" : "img/merendine/bueno.png",
+			"prezzo" : 1
+		},
+		{ 
+			"nome" : "Duplo",
+			"url" : "img/merendine/duplo.png",
+			"prezzo" : 0.8
+		},
+		{ 
+			"nome" : "Crostatina",
+			"url" : "img/merendine/crostatina.png",
+			"prezzo" : 0.5
+		},
+		{ 
+			"nome" : "Delice",
+			"url" : "img/merendine/delice.png",
+			"prezzo" : 0.8
+		},
+		{ 
+			"nome" : "Fetta al Latte",
+			"url" : "img/merendine/fetta.png",
+			"prezzo" : 1
+		},
+		{ 
+			"nome" : "Girella",
+			"url" : "img/merendine/girella.png",
+			"prezzo" : 0.7
+		},
+		{ 
+			"nome" : "Flauti",
+			"url" : "img/merendine/flauti.png",
+			"prezzo" : 0.8
+		},
+		{ 
+			"nome" : "Merendero",
+			"url" : "img/merendine/merendero.png",
+			"prezzo" : 0.7
+		},
+		{ 
+			"nome" : "Pinguì",
+			"url" : "img/merendine/pingui.png",
+			"prezzo" : 1
+		}
+	]
+}

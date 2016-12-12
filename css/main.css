@@ -1,0 +1,13 @@
+body {
+    padding-top: 10px;
+    background-color: #F5F5F5;
+}
+#home {
+  background-color: lightgrey;
+}
+li, h3 {
+  text-align: center;
+}
+input[type="number"] {
+  width: 50px;
+}

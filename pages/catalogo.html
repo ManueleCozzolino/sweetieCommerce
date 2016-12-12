@@ -1,0 +1,82 @@
+<head>
+	<style>
+		.catalog {
+			height: 60px;
+		}
+		.singleProd {
+			height: 250px;
+		}
+		.centrale {
+			text-align:center;
+		}
+		.destra {
+			text-align:right;
+		}
+		.sinistra{
+			text-align:left;
+		}
+		.bigFont {
+			font-size: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div ng-controller='selectionsCtrl'>
+		<div>
+			<h3 ng-bind='pagina'></h3>
+			<section>
+				<div class='panel panel-default'>
+					<div class="panel-body">
+						<div ng-repeat='elem in listaFoto | orderBy: "+nome"'>
+							<div class='col-md-3'>
+								<div class='well centrale' ng-click='initSelected(elem.nome, elem.url, elem.prezzo)'>
+									<figure>
+										<img class='catalog' ng-src='{{elem.url}}'></img>
+									</figure>
+									<figcaption>
+										<a ng-bind='elem.nome'></a>
+									</figcaption>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<section ng-show='selected!=""'>
+			<hr/>
+			<div class='panel panel-default' style='padding:1cm'>
+				<div class='row'>
+					<aside class='sinistra'>
+						<label class='bigFont' ng-bind='selected.nome'></label>
+					</aside>
+				</div>
+				<div class='row'>
+					<figure class='centrale'>
+						<img class='singleProd' ng-src='{{selected.url}}'></img>
+					</figure>
+				</div>
+				<div class='row'>
+					<form name='purchaseForm' class="form-horizontal" ng-submit='purchaseForm.$valid && addCart(selected)' novalidate>
+						<fieldset>
+							<div class="form-group">
+								<label class='col-xs-1' for='qnt'>Quantità:</label>
+								<div class='col-xs-1'>
+									<input id='qnt' type="number" ng-model="selected.quantita" min=1 max=99 required />
+								</div>
+							</div>
+							<div class="form-group">
+								<aside class='destra'>
+									<button type="submit" class="btn btn-primary col-md-2">
+										<span class="glyphicon glyphicon-plus"></span> Add Cart 
+									</button>
+									<label class='bigFont col-md-9' ng-bind='selected.prezzo | currency:"€"'></label>
+								</aside>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>

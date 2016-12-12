@@ -1,0 +1,54 @@
+{
+	"biscotti" : [
+		{ 
+			"nome" : "Macine",
+			"url" : "img/biscotti/Macine.png",
+			"prezzo" : 1.8
+		},
+		{ 
+			"nome" : "Baiocchi",
+			"url" : "img/biscotti/Baiocchi.png",
+			"prezzo" : 0.8
+		},
+		{ 
+			"nome" : "Gocciole",
+			"url" : "img/biscotti/Gocciole.png",
+			"prezzo" : 2.2
+		},
+		{ 
+			"nome" : "Doricrem",
+			"url" : "img/biscotti/Doricrem.png",
+			"prezzo" : 1
+		},
+		{ 
+			"nome" : "Abbracci",
+			"url" : "img/biscotti/Abbracci.png",
+			"prezzo" : 2.3
+		},
+		{ 
+			"nome" : "Cuor di mela",
+			"url" : "img/biscotti/Cuor di mela.png",
+			"prezzo" : 2.8
+		},
+		{ 
+			"nome" : "Nascondini",
+			"url" : "img/biscotti/Nascondini.png",
+			"prezzo" : 1.9
+		},
+		{ 
+			"nome" : "Ringo",
+			"url" : "img/biscotti/Ringo.png",
+			"prezzo" : 0.8
+		},
+		{ 
+			"nome" : "Ritornelli",
+			"url" : "img/biscotti/Ritornelli.png",
+			"prezzo" : 2.3
+		},
+		{ 
+			"nome" : "Pan di stelle",
+			"url" : "img/biscotti/Pan di stelle.png",
+			"prezzo" : 1.9
+		}
+	]
+}

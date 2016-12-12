@@ -1,0 +1,44 @@
+{
+	"caramelle" : [
+		{ 
+			"nome" : "Frizzy",
+			"url" : "img/caramelle/frizzy.png",
+			"prezzo" : 2.3
+		},
+		{ 
+			"nome" : "Ricola",
+			"url" : "img/caramelle/ricola.png",
+			"prezzo" : 1.5
+		},
+		{ 
+			"nome" : "Golia",
+			"url" : "img/caramelle/golia.png",
+			"prezzo" : 1.2
+		},
+		{ 
+			"nome" : "Alpenliebe",
+			"url" : "img/caramelle/alpenliebe.png",
+			"prezzo" : 1.2
+		},
+		{ 
+			"nome" : "Halls",
+			"url" : "img/caramelle/halls.png",
+			"prezzo" : 1.3
+		},
+		{ 
+			"nome" : "Haribo",
+			"url" : "img/caramelle/Haribo.png",
+			"prezzo" : 2.1
+		},
+		{ 
+			"nome" : "Ricola II",
+			"url" : "img/caramelle/ricola2.png",
+			"prezzo" : 1.5
+		},
+		{ 
+			"nome" : "Fisherman",
+			"url" : "img/caramelle/fisherman.png",
+			"prezzo" : 2
+		}
+	]
+}
